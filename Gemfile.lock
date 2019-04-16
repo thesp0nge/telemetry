@@ -20,6 +20,15 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
+    capistrano-bundler (1.5.0)
+      capistrano (~> 3.1)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+    capistrano3-puma (3.1.1)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (~> 3.4)
     concurrent-ruby (1.1.5)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -56,6 +65,9 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   capistrano
+  capistrano-bundler
+  capistrano-rvm
+  capistrano3-puma
   puma
   rake
   sinatra-activerecord

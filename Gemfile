@@ -6,4 +6,10 @@ gem 'sqlite3'
 gem 'rake'
 gem 'puma'
 
-gem 'capistrano'
+group :develoment do
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano', require: false
+  gem 'capistrano3-puma', require: false
+  gem 'capistrano-bundler', require: false
+  
+end
